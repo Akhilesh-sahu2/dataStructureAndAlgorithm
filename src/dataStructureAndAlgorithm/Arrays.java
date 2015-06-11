@@ -22,28 +22,24 @@ public class Arrays {
 			}
 			switch (options) {
 				case 1:
-					System.out.print("\tPlease Enter 10 number to fill the integer array\n");
-					for(int i=0;i<10;i++){
-						System.out.print("\tPlease Enter "+(i+1)+" number  \n");
-						BufferedReader brOned = new BufferedReader(new InputStreamReader(System.in));
-						try {
-							oneD.push(Integer.parseInt(brOned.readLine()));
-							System.out.print("\tDo you want to enter more number Y/N \n");
-							BufferedReader yorn = new BufferedReader(new InputStreamReader(System.in));
-							if(yorn.readLine().equalsIgnoreCase("Y")){
-								continue;
-							}else{
-								break;
-							}
-						} catch (NumberFormatException nfe) {
-							options = 0;
-						}
-					}			
-					oneD.printElement();
+					System.out.print("\tPlease enter number to Push\n");
+					BufferedReader brOned = new BufferedReader(new InputStreamReader(System.in));
+					try {
+						oneD.push(Integer.parseInt(brOned.readLine()));
+					} catch (NumberFormatException nfe) {
+						System.out.print("\tPlease enter a valid number\n");
+					}
+					
 					break;
+					
 				case 2:
+					System.out.print("\tPoped up number is "+oneD.pop()+"\n");
+					break;
+					
+				case 3:
 					oneD.printElement();
 					break;
+					
 				default:
 			}
 
