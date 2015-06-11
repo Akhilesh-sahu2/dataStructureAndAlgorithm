@@ -29,7 +29,6 @@ public class Arrays {
 					} catch (NumberFormatException nfe) {
 						System.out.print("\tPlease enter a valid number\n");
 					}
-					
 					break;
 					
 				case 2:
