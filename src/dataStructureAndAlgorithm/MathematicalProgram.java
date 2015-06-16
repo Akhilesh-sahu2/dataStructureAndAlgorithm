@@ -104,6 +104,11 @@ public class MathematicalProgram {
 					mathematicalProgram.printNumber(fibonacciSeries);
 					break;
 					
+				case 11:
+					int floydRange = mathematicalProgram.getNumberInput("floydRange");
+					maths.FloydTriangle(floydRange);
+					break;
+					
 				default:
 			}
 		} while (options!=0);
@@ -135,6 +140,7 @@ public class MathematicalProgram {
 		System.out.print("\t 8. Prime factors of number\n");
 		System.out.print("\t 9. Enterd numbers is Palindrom or not\n");
 		System.out.print("\t10. Fibonacci series for the given range\n");
+		System.out.print("\t11. Floyd Triangle Upto range\n");
 		System.out.print("\t============================================================\n");
 	}
 	
