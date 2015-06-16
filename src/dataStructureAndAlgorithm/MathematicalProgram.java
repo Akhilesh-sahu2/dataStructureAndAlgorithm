@@ -52,6 +52,42 @@ public class MathematicalProgram {
 					else
 						System.out.print("\t"+number+" is a not perfect number\n");
 					break;
+				
+				case 4:
+					int prime = mathematicalProgram.getNumberInput("Prime");
+					boolean isPrime = maths.isPrimeNumber(prime);
+					if(isPrime)
+						System.out.print("\t"+prime+" is a Prime number\n");
+					else
+						System.out.print("\t"+prime+" is a not Prime number\n");
+					break;
+					
+				case 5:
+					int amstrong = mathematicalProgram.getNumberInput("Amstrong");
+					boolean isAmstrong = maths.isAmstrongNumber(amstrong);
+					if(isAmstrong)
+						System.out.print("\t"+amstrong+" is a Amstrong number\n");
+					else
+						System.out.print("\t"+amstrong+" is a not Amstrong number\n");
+					break;
+					
+				case 6:
+					int numberToReverse = mathematicalProgram.getNumberInput("Reverse");
+					int reverse = maths.reverseANumber(numberToReverse);
+					System.out.print("\tReverse of "+numberToReverse+" is "+reverse+"\n");
+					break;
+					
+				case 7:
+					int number1 = mathematicalProgram.getNumberInput("Number1");
+					int number2 = mathematicalProgram.getNumberInput("Number2");
+					maths.swapNumber(number1, number2);
+					break;
+				
+				case 8:
+					int primeFactor = mathematicalProgram.getNumberInput("PremeFactors");
+					int primeFactors[]= maths.primeFactorsOfNumber(primeFactor);
+					mathematicalProgram.printNumber(primeFactors);
+					break;
 					
 				default:
 			}
@@ -78,6 +114,10 @@ public class MathematicalProgram {
 		System.out.print("\t2. Even Numeber upto given range\n");
 		System.out.print("\t3. Enterd numbers is perfect or not\n");
 		System.out.print("\t4. Enterd numbers is prime or not\n");
+		System.out.print("\t5. Enterd numbers is Amstrong or not\n");
+		System.out.print("\t6. Reverse A number\n");
+		System.out.print("\t7. Swapping of two number without using 3rd vairable\n");
+		System.out.print("\t8. Prime factors of number\n");
 		System.out.print("\t============================================================\n");
 	}
 	
