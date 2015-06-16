@@ -89,6 +89,21 @@ public class MathematicalProgram {
 					mathematicalProgram.printNumber(primeFactors);
 					break;
 					
+				case 9:
+					int pelindromNumber = mathematicalProgram.getNumberInput("Pelindrom");
+					boolean isPalindrom = maths.isPelindromNumber(pelindromNumber);
+					if(isPalindrom)
+						System.out.print("\t"+pelindromNumber+" is a Palindrom number\n");
+					else
+						System.out.print("\t"+pelindromNumber+" is a not Palindrom number\n");
+					break;
+				
+				case 10:
+					int range = mathematicalProgram.getNumberInput("Fibonacci");
+					int fibonacciSeries[]= maths.fibonacciSeries(range);
+					mathematicalProgram.printNumber(fibonacciSeries);
+					break;
+					
 				default:
 			}
 		} while (options!=0);
@@ -110,14 +125,16 @@ public class MathematicalProgram {
 	private void printChoiceOptions() {
 		System.out.print("\t============================================================\n");
 		System.out.print("\tEnter Your Choice using number\n");
-		System.out.print("\t1. Odd Numeber upto given range\n");
-		System.out.print("\t2. Even Numeber upto given range\n");
-		System.out.print("\t3. Enterd numbers is perfect or not\n");
-		System.out.print("\t4. Enterd numbers is prime or not\n");
-		System.out.print("\t5. Enterd numbers is Amstrong or not\n");
-		System.out.print("\t6. Reverse A number\n");
-		System.out.print("\t7. Swapping of two number without using 3rd vairable\n");
-		System.out.print("\t8. Prime factors of number\n");
+		System.out.print("\t 1. Odd Numeber upto given range\n");
+		System.out.print("\t 2. Even Numeber upto given range\n");
+		System.out.print("\t 3. Enterd numbers is perfect or not\n");
+		System.out.print("\t 4. Enterd numbers is prime or not\n");
+		System.out.print("\t 5. Enterd numbers is Amstrong or not\n");
+		System.out.print("\t 6. Reverse A number\n");
+		System.out.print("\t 7. Swapping of two number without using 3rd vairable\n");
+		System.out.print("\t 8. Prime factors of number\n");
+		System.out.print("\t 9. Enterd numbers is Palindrom or not\n");
+		System.out.print("\t10. Fibonacci series for the given range\n");
 		System.out.print("\t============================================================\n");
 	}
 	

@@ -116,19 +116,11 @@ public class Maths {
 	}
 	
 	/**
-	 * Swapping two number without using 3rd variable 
-	 * example a = 123, b=23
-	 *    a=a+b, a=146
-	 *    b=a-b, b=123
-	 *    a=a-b, a=23
-	 *    or
-	 *    a=a*b a= 2023
-	 *    b=a/b b=123
-	 *    a=a/b a=23
+	 * Prime factor of number
 	 */
 	
 	public int[] primeFactorsOfNumber(int number) {
-		int primeFactorsArray[]= new int[number/2];
+		int primeFactorsArray[] = new int[(int)Math.sqrt(number/2)];
 		int arraySize=0;
 	    // Print the number of 2s that divide n
 	    while (number%2 == 0)
@@ -158,7 +150,47 @@ public class Maths {
 		return primeFactorsArray;
 	}
 	
-	
+	/**
+	 * A palindrome number is a number such that if we reverse it, 
+	 * it will not change. For example some palindrome numbers examples are 121, 212, 12321, -454. 
+	 * To check whether a number is palindrome or not first we reverse it and then compare the number 
+	 * obtained with the original, if both are same then number is palindrome otherwise not. 
+	 * 
+	 */
 	
 
+	public boolean isPelindromNumber(int number) {
+		int reverse=0;
+		int originalNumber=number;
+		while (number != 0)
+		   {
+		      reverse = reverse * 10;
+		      reverse = reverse + number%10;
+		      number  = number/10;
+		   }
+		if(reverse==originalNumber)
+		  return true;
+		else
+		  return false;
+	}
+	
+	/**
+	 * The Fibonacci Sequence is the series of numbers: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ... 
+	 * The next number is found by adding up the two numbers before it. Similarly, 
+	 * the 3 is found by adding the two numbers before it (1+2),
+	 */
+	/**
+	 * Prime factor of number
+	 */
+	
+	public int[] fibonacciSeries(int number) {
+		int primeFactorsArray[]= new int[number];
+		for(int count=0; count<primeFactorsArray.length; count++){
+			if(count<2)
+			 primeFactorsArray[count]=count;
+			else
+			  primeFactorsArray[count]=primeFactorsArray[count-2]+primeFactorsArray[count-1];
+		}
+		return primeFactorsArray;
+	}
 }
