@@ -65,7 +65,6 @@ public class OneDArrays {
 			for(int count=0;count<=top-1;count++){
 				System.out.print("\t"+(count+1)+" element for Integer array is "+integerArray[count]+"\n");
 			}
-			
 		}
 	
 }
