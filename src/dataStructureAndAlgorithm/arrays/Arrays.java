@@ -5,29 +5,7 @@ import java.util.Random;
 public class Arrays {
 		private int top=0;
 		private int integerArray[] = new int[20];
-//		
-//		public static void main(String args[]){
-//			OneDArrays a= new OneDArrays();
-//			System.out.println("Size "+a.integerArray.length);
-//				a.push(200);
-//				System.out.println("nos of element in array "+a.top+" and push number is 200");
-//				a.push(43);
-//				System.out.println("nos of element in array "+a.top+" and push number is 43");
-//				a.push(423);
-//				System.out.println("nos of element in array "+a.top+" and push number is 423");
-//				a.push(342);
-//				System.out.println("nos of element in array "+a.top+" and push number is 342");
-//				a.push(321);
-//				System.out.println("nos of element in array "+a.top+" and push number is 321");
-//				System.out.println("nos of element in array "+a.top +" and poped number is "+a.pop());
-//				System.out.println("nos of element in array "+a.top +" and poped number is "+a.pop());
-//				System.out.println("nos of element in array "+a.top +" and poped number is "+a.pop());
-//				System.out.println("nos of element in array "+a.top +" and poped number is "+a.pop());
-//				System.out.println("nos of element in array "+a.top +" and poped number is "+a.pop());
-//				System.out.println("nos of element in array "+a.top +" and poped number is "+a.pop());
-//				System.out.println("nos of element in array "+a.top +" and poped number is "+a.pop());
-//				
-//		}
+		
 		public boolean isFull(){
 			if(top==(integerArray.length)){
 				return true;
@@ -142,5 +120,5 @@ public class Arrays {
 			arr.populateAutoArray();
 			arr.printElement();
 		}
-	
+		
 }
