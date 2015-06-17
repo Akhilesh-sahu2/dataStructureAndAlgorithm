@@ -302,8 +302,40 @@ public class Maths {
 			System.out.println();
 		}
 	}
+	
+	/**
+	 * method to draw pyramid of digit triangle pattern
+	 * 
+		          1   
+		        1   1   
+		      1   2   1   
+		    1   3   3   1   
+		  1   4   6   4   1   
+	 * 
+	 */
+	public void paskalTriangle(int range){
+		System.out.print("\tPascals Triangle\n");
+		int lastelement=0;
+		for(int count=0;count<range;count++){
+			// code to draw pattern
+			String tab="";
+			for(int space=1;space<=range-count;space++){
+				tab=tab+"  ";
+			}
+			System.out.print(tab);
+			for(int rowElement=0;rowElement<=count;rowElement++){
+				if (rowElement==0||count==0)
+					lastelement=1;
+	            else
+	            	lastelement=lastelement*(count-rowElement+1)/rowElement;
+				System.out.print( lastelement + "   ");
+			}
+			System.out.println();
+		}
+	}
+	
 	public static void main(String args[]){
 		Maths ma= new Maths();
-		ma.digitPyramidTriangle(5);
+		ma.paskalTriangle(10);
 	}
 }

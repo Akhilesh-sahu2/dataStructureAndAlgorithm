@@ -118,6 +118,16 @@ public class MathematicalProgram {
 					int starTrangleRange = mathematicalProgram.getNumberInput("Star Triangle Range");
 					maths.starPattern(starTrangleRange);
 					break;
+					
+				case 14:
+					int digitPyramidTrangleRange = mathematicalProgram.getNumberInput("Digit Triangle Range");
+					maths.digitPyramidTriangle(digitPyramidTrangleRange);
+					break;
+				
+				case 15:
+					int pascalsTrangleRange = mathematicalProgram.getNumberInput("Pascals Triangle Range");
+					maths.paskalTriangle(pascalsTrangleRange);
+					break;
 				default:
 			}
 		} while (options!=0);
@@ -151,7 +161,9 @@ public class MathematicalProgram {
 		System.out.print("\t10. Fibonacci series for the given range\n");
 		System.out.print("\t11. Floyd Triangle Upto range\n");
 		System.out.print("\t12. Digit Triangle Upto range\n");
-		System.out.print("\t12. Star Triangle Upto range\n");
+		System.out.print("\t13. Star Triangle Upto range\n");
+		System.out.print("\t14. Digit pyramid Triangle Upto range\n");
+		System.out.print("\t15. Pascal's Triangle Upto range\n");
 		System.out.print("\t============================================================\n");
 	}
 	
