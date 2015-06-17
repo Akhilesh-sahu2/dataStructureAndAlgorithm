@@ -4,12 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import dataStructureAndAlgorithm.arrays.OneDArrays;
+import dataStructureAndAlgorithm.arrays.Arrays;
 
-public class Arrays {
+public class ArraysManipulation {
 	public static void main(String[] args) throws IOException {
-		Arrays array = new Arrays();
-		OneDArrays oneD =  new OneDArrays();
+		ArraysManipulation array = new ArraysManipulation();
+		Arrays oneD =  new Arrays();
 		int options = 0;
 		do {
 			BufferedReader br = new BufferedReader(new InputStreamReader(
@@ -48,9 +48,10 @@ public class Arrays {
 	private void printChoiceOptions() {
 		System.out.print("\t============================================================\n");
 		System.out.print("\tEnter Your Choice using number\n");
-		System.out.print("\t1. One Dimension Array push operation\n");
-		System.out.print("\t2. One Dimension Array pop operation\n");
-		System.out.print("\t3. One Dimension Array print operation\n");
+		System.out.print("\t 1. One Dimension Array push operation\n");
+		System.out.print("\t 2. One Dimension Array pop operation\n");
+		System.out.print("\t 3. One Dimension Array print operation\n");
+		System.out.print("\t 4. Smallest element in array without sorting\n");
 		System.out.print("\t============================================================\n");
 	}
 	

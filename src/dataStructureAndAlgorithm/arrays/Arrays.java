@@ -1,6 +1,6 @@
 package dataStructureAndAlgorithm.arrays;
 
-public class OneDArrays {
+public class Arrays {
 		private int top=0;
 		private int integerArray[] = new int[10];
 //		
