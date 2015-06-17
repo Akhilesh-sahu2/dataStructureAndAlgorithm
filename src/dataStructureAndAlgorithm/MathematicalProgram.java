@@ -109,6 +109,15 @@ public class MathematicalProgram {
 					maths.FloydTriangle(floydRange);
 					break;
 					
+				case 12:
+					int digitTrangleRange = mathematicalProgram.getNumberInput("DigitRange");
+					maths.digitTriangle(digitTrangleRange);
+					break;
+					
+				case 13:
+					int starTrangleRange = mathematicalProgram.getNumberInput("Star Triangle Range");
+					maths.starPattern(starTrangleRange);
+					break;
 				default:
 			}
 		} while (options!=0);
@@ -141,6 +150,8 @@ public class MathematicalProgram {
 		System.out.print("\t 9. Enterd numbers is Palindrom or not\n");
 		System.out.print("\t10. Fibonacci series for the given range\n");
 		System.out.print("\t11. Floyd Triangle Upto range\n");
+		System.out.print("\t12. Digit Triangle Upto range\n");
+		System.out.print("\t12. Star Triangle Upto range\n");
 		System.out.print("\t============================================================\n");
 	}
 	

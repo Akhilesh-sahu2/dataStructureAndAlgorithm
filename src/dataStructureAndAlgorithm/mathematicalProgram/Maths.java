@@ -183,14 +183,17 @@ public class Maths {
 	}
 
 	/**
-	 * The Fibonacci Sequence is the series of numbers: 0, 1, 1, 2, 3, 5, 8, 13,
-	 * 21, 34, ... The next number is found by adding up the two numbers before
-	 * it. Similarly, the 3 is found by adding the two numbers before it (1+2),
+	 * Method to draw floyd triangle
+	 *  1 
+		2 	3 
+		4 	5 	6 
+		7 	8 	9 	10 
+		11 	12 	13 	14 	15 
 	 */
 
 	public void FloydTriangle(int range) {
 		int num = 1, c, d;
-		System.out.println("Floyd's triangle :-");
+		System.out.print("\tFloyd's triangle\n");
 		for (c = 1; c <= range; c++) {
 			for (d = 1; d <= c; d++) {
 				System.out.print("\t" + num + " ");
@@ -199,5 +202,108 @@ public class Maths {
 
 			System.out.println();
 		}
+	}
+	
+	/**
+	 * method to draw digit triangle pattern
+	 * 
+						1 
+					2 	3 	4 
+				5 	6 	7 	8 	9 
+			10 	11 	12 	13 	14 	15 	16 
+		17 	18 	19 	20 	21 	22 	23 	24 	25 
+	 * 
+	 */
+	public void digitTriangle(int range){
+		int numberOfElementInRows=0;
+		System.out.print("\tDigit Triangle\n");
+		int lastelement=0;
+		for(int count=0;count<range;count++){
+			numberOfElementInRows=1+(count*2);
+			// code to draw pattern
+			String tab="";
+			for(int space=1;space<=range-count;space++){
+				tab=tab+"\t";
+			}
+			System.out.print(tab);
+			
+			for(int rowElement=0;rowElement<numberOfElementInRows;rowElement++){
+				lastelement=lastelement+1;
+				System.out.print("\t" + lastelement + " ");
+			}
+			System.out.println();
+		}
+	}
+	
+
+	/**
+	 * method to draw digit triangle pattern
+	 * 
+						* 
+					* 	* 	* 
+				* 	* 	* 	* 	* 
+			* 	* 	* 	* 	* 	* 	* 
+		* 	* 	* 	* 	* 	* 	* 	* 	* 
+	 * 
+	 */
+	public void starPattern(int range){
+		int numberOfElementInRows=0;
+		System.out.print("\tStar Triangle\n");
+		int midTerm=1;
+		for(int rowCount=0;rowCount<range;rowCount++){
+			numberOfElementInRows=midTerm+(rowCount*2);
+			// code to draw pattern
+			String tab="";
+			for(int space=1;space<=range-rowCount;space++){
+				tab=tab+"\t";
+			}
+			System.out.print(tab);
+			
+			for(int rowElement=0;rowElement<numberOfElementInRows;rowElement++){
+				System.out.print("\t" + "*" + " ");
+			}
+			System.out.println();
+		}
+	}
+	
+	/**
+	 * method to draw pyramid of digit triangle pattern
+	 * 
+						1 
+					2 	3 	2 
+				3 	4 	5 	4 	3 
+			4 	5 	6 	7 	6 	5 	4 
+		5 	6 	7 	8 	9 	8 	7 	6 	5 
+	 * 
+	 */
+	public void digitPyramidTriangle(int range){
+		int numberOfElementInRows=0;
+		System.out.print("\tDigit Triangle\n");
+		int lastelement=0;
+		for(int count=0;count<range;count++){
+			numberOfElementInRows=1+(count*2);
+			// code to draw pattern
+			String tab="";
+			for(int space=1;space<=range-count;space++){
+				tab=tab+"\t";
+			}
+			System.out.print(tab);
+			int mid=0;
+			for(int rowElement=0;rowElement<numberOfElementInRows;rowElement++){
+				if(lastelement==numberOfElementInRows)
+					mid=lastelement;
+				if(mid==numberOfElementInRows){
+				  lastelement=lastelement-1;
+				}else{
+				  lastelement=lastelement+1;
+				}
+				System.out.print("\t" + lastelement + " ");
+			}
+			System.out.println();
+		}
+	}
+	public static void main(String args[]){
+		Maths ma= new Maths();
+		ma.digitPyramidTriangle(5);
 	}
 }
