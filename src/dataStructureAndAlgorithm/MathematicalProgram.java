@@ -4,9 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import dataStructureAndAlgorithm.mathematicalProgram.EvenNumberUptoGivenRange;
 import dataStructureAndAlgorithm.mathematicalProgram.Maths;
-import dataStructureAndAlgorithm.mathematicalProgram.OddNumberUptoRange;
 /**
  * @author akhilesh_sahu
  * MathematicalProgram to operate the mathematical function and operations 
@@ -14,8 +12,6 @@ import dataStructureAndAlgorithm.mathematicalProgram.OddNumberUptoRange;
 public class MathematicalProgram {
 
 	public static void main(String[] args)throws IOException  {
-		OddNumberUptoRange oddNumberUptoRange= new 	OddNumberUptoRange();
-		EvenNumberUptoGivenRange  evenNumberUptoGivenRange = new EvenNumberUptoGivenRange();
 		Maths maths= new Maths();
 		MathematicalProgram mathematicalProgram = new MathematicalProgram();
 		int options = 0;
