@@ -30,12 +30,12 @@ public class MathematicalProgram {
 			
 				case 1:					
 					int oddNumberArray[] = maths.getOddNumberUptoRange(mathematicalProgram.getNumberInput("Odd"));
-					mathematicalProgram.printNumber(oddNumberArray);
+					mathematicalProgram.printElement(oddNumberArray);
 					break;
 					
 				case 2:					
 					int evenNumberArray[] = maths.getEvenNumberUptoRange(mathematicalProgram.getNumberInput("Even"));
-					mathematicalProgram.printNumber(evenNumberArray);
+					mathematicalProgram.printElement(evenNumberArray);
 					break;
 					
 				case 3:
@@ -80,7 +80,7 @@ public class MathematicalProgram {
 				case 8:
 					int primeFactor = mathematicalProgram.getNumberInput("PremeFactors");
 					int primeFactors[]= maths.primeFactorsOfNumber(primeFactor);
-					mathematicalProgram.printNumber(primeFactors);
+					mathematicalProgram.printElement(primeFactors);
 					break;
 					
 				case 9:
@@ -95,7 +95,7 @@ public class MathematicalProgram {
 				case 10:
 					int range = mathematicalProgram.getNumberInput("Fibonacci");
 					int fibonacciSeries[]= maths.fibonacciSeries(range);
-					mathematicalProgram.printNumber(fibonacciSeries);
+					mathematicalProgram.printElement(fibonacciSeries);
 					break;
 					
 				case 11:
@@ -161,7 +161,7 @@ public class MathematicalProgram {
 		System.out.print("\t============================================================\n");
 	}
 	
-	private void printNumber(int [] numberArray){
+	private void printElement(int [] numberArray){
 		for (int count =0; count<numberArray.length; count++){
 			if(count==numberArray.length-1)
 				System.out.print(numberArray[count]+". \n");
