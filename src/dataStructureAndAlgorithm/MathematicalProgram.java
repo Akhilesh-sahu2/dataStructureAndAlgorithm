@@ -32,15 +32,13 @@ public class MathematicalProgram {
 			
 			switch (options) {
 			
-				case 1:
-					
-					int oddNumberArray[] = oddNumberUptoRange.getOddNumberUptoRange(mathematicalProgram.getNumberInput("Odd"));
+				case 1:					
+					int oddNumberArray[] = maths.getOddNumberUptoRange(mathematicalProgram.getNumberInput("Odd"));
 					mathematicalProgram.printNumber(oddNumberArray);
 					break;
 					
-				case 2:
-					
-					int evenNumberArray[] = evenNumberUptoGivenRange.getEvenNumberUptoRange(mathematicalProgram.getNumberInput("Even"));
+				case 2:					
+					int evenNumberArray[] = maths.getEvenNumberUptoRange(mathematicalProgram.getNumberInput("Even"));
 					mathematicalProgram.printNumber(evenNumberArray);
 					break;
 					
