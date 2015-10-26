@@ -56,8 +56,12 @@ public class LinkedList {
 	public void add(Object data)
 	// appends the specified element to the end of this list.
 	{
+		
 		Node temp = new Node(data);
 		Node current = head;
+		System.out.println("In add temp "+temp.next);
+		System.out.println("In add  current "+current.next);
+		System.out.println("In add head "+head.next);
 		// starting at the head node, crawl to the end of the list
 		while (current.getNext() != null) {
 			current = current.getNext();
